@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+    <div>
+        <section id ="topPop">
+            <div id="taskList">
+                <b>Tasks </b>List
+            </div>
+            <div>
+                <button onclick="callPopup()" id="addListMainScreen"><i class="fa-solid fa-circle-plus icon"> </i><span style="color: white;"> Add List</span></button>
+            </div>
+        </section>
+        <section id="cardPop">
+            <div id="noItemText"> 
+                No Item in the todo list.
+            </div>        
+        </section>
+        <section>
+            <div id="form">
+                <label for="" style="font-size: 30px;color: white;">Add New List</label>  <br> <br>
+                <input type="text" name="name" placeholder="Enter your task" id="name" value="" style="height: 30px;width: 200px;border-radius: 10px;"><br> <br>
+                <button id="btn1" onclick="changeHere()" style="background-color: coral;width: 100px;border-radius: 10px;height: 25px;">ADD</button>
+                <button onclick="backButton()" style="background-color: coral;width: 100px;border-radius: 10px;height: 25px;">CLOSE</button>           
+            </div>     
+        </section>
+        <section>
+            <div id="formCard">
+                <label for="" style="font-size: 30px;color: white;">Add New List</label>  <br> <br>
+                <input type="text" name="nameCard" placeholder="Enter your task" id="nameCard" value="" style="height: 30px;width: 200px;border-radius: 10px;"><br> <br>
+                <button id="btn2" onclick="changeHereForChildDiv()" style="background-color: coral;width: 100px;border-radius: 10px;height: 25px;">ADD</button>
+                <button onclick="backButton()" style="background-color: coral;width: 100px;border-radius: 10px;height: 25px;">CLOSE</button>            
+            </div>     
+        </section>
+    </div>
+    <div id="parent">
+
+    </div>    
+
+    <script src="./index.js"></script>
+</body>
+</html>
